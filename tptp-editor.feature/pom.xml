@@ -1,0 +1,13 @@
+<project>
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.edla.tptp</groupId>
+		<artifactId>tptp-editor.parent</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../tptp-editor.parent/pom.xml</relativePath>
+	</parent>
+	<groupId>org.edla.tptp</groupId>
+	<artifactId>tptp-editor.feature</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>eclipse-feature</packaging>
+</project>
