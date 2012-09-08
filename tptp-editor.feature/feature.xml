@@ -16,6 +16,12 @@
       [Enter License Description here.]
    </license>
 
+   <requires>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import feature="org.eclipse.rcp" version="4.2.0.v20120528-1648-7IAPA7BrHQicRpNdOz-Obz-rlRCA"/>
+   </requires>
+
    <plugin
          id="tptp-editor.rcp"
          download-size="0"
@@ -24,11 +30,10 @@
          unpack="false"/>
 
    <plugin
-         id="org.eclipse.swt.cocoa.macosx.x86_64"
+         id="org.eclipse.rcp"
          download-size="0"
          install-size="0"
          version="0.0.0"
-         fragment="true"
          unpack="false"/>
 
 </feature>
