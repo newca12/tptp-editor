@@ -6,15 +6,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<properties>
-		<tycho-version>0.15.0</tycho-version>
+		<tycho-version>0.18.0</tycho-version>
 	</properties>
 
 	<repositories>
 		<!-- configure p2 repository to resolve against -->
 		<repository>
-			<id>juno</id>
+			<id>kepler</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/juno/</url>
+			<url>http://download.eclipse.org/releases/kepler/</url>
 		</repository>
 	</repositories>
 	<build>

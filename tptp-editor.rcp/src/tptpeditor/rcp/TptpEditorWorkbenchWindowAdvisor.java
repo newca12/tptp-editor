@@ -6,9 +6,10 @@ import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
 import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 
-public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
+public class TptpEditorWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
-	public ApplicationWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {
+	public TptpEditorWorkbenchWindowAdvisor(
+			IWorkbenchWindowConfigurer configurer) {
 		super(configurer);
 	}
 
@@ -18,9 +19,11 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 	}
 
 	public void preWindowOpen() {
-		IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
-		configurer.setInitialSize(new Point(400, 300));
-		configurer.setShowCoolBar(false);
-		configurer.setShowStatusLine(false);
+		super.preWindowOpen();
+		IWorkbenchWindowConfigurer wc = getWindowConfigurer();
+		wc.setInitialSize(new Point(600, 450));
+		wc.setShowCoolBar(true);
+		wc.setShowStatusLine(true);
+		wc.setShowProgressIndicator(true);
 	}
 }

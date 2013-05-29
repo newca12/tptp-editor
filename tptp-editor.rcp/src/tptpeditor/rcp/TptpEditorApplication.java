@@ -9,7 +9,7 @@ import org.eclipse.ui.PlatformUI;
 /**
  * This class controls all aspects of the application's execution
  */
-public class Application implements IApplication {
+public class TptpEditorApplication implements IApplication {
 
 	/* (non-Javadoc)
 	 * @see org.eclipse.equinox.app.IApplication#start(org.eclipse.equinox.app.IApplicationContext)
@@ -17,7 +17,7 @@ public class Application implements IApplication {
 	public Object start(IApplicationContext context) {
 		Display display = PlatformUI.createDisplay();
 		try {
-			int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
+			int returnCode = PlatformUI.createAndRunWorkbench(display, new TptpEditorWorkbenchAdvisor());
 			if (returnCode == PlatformUI.RETURN_RESTART) {
 				return IApplication.EXIT_RESTART;
 			}
